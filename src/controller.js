@@ -31,7 +31,7 @@ exports.register =  async (req, res, next) => {
         res.status(201).send(result);
 
     }
-    catch{
+    catch(err){
         console.log("error in creating a user");
         console.log(err);
         next(err);
